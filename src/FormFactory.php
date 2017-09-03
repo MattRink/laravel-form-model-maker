@@ -1,6 +1,6 @@
 <?php
 
-namespace MattRink\ModelFormMaker\FormFactory;
+namespace MattRink\ModelFormMaker;
 
 use Illuminate\Database\Eloquent\Model;
 
