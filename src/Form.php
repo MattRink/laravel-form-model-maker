@@ -35,7 +35,7 @@ class Form
      * 
      * @return void
      */
-    public function __construct(Model $model)
+    public function __construct($model)
     {
         $this->modelAttributes = $model->getModelAttributes();
         $this->formFields = $model->getFormFields();
