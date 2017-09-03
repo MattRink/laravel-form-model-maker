@@ -3,7 +3,7 @@
 namespace MattRink\ModelFormMaker\Traits;
 
 use MattRink\ModelFormMaker\FormFactory;
-use Illuminate\Support\Faceds\DB;
+use Illuminate\Support\Facades\DB;
 
 trait GeneratesForm
 {
