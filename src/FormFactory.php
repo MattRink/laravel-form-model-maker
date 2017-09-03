@@ -11,8 +11,16 @@ class FormFactory
      * 
      * @return \MattRink\ModelFormMaker\Form
      */
-    public static function create(Model $model)
+    public static function create($type)
     {
-        return new Form($this);
+        if (gettype($type) == 'string') {
+            $model = new $type();
+        } else if ($type instanceof Model) {
+            $model = $type;
+        } else {
+            throw new Exception("Unexpected type {$type} given to FormFactory::create().");
+        }
+        
+        return new Form($model);
     }
 }
