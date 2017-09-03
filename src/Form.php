@@ -49,7 +49,7 @@ class Form
      */
     public function show()
     {
-        $fields = count($this->formFields) ? array_intersect($this->modelAttributes, $this->formFields) : $this->modelAttributes;
+        $fields = (count($this->formFields) ? array_intersect($this->modelAttributes, $this->formFields) : $this->modelAttributes);
 
         $form = '';
         foreach ($fields as $field) {
