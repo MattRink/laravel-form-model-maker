@@ -14,11 +14,21 @@ trait GeneratesForm
     protected $formFields = [];
 
     /**
+     * Getter for the form fields property
+     * 
+     * @return array
+     */
+    public function getFormFields()
+    {
+        return $this->formFields;
+    }
+
+    /**
      * 
      */
     public function form()
     {
-        $form = FormFactory::make($this);
+        $form = FormFactory::create($this);
         return $form->show();
     }
 }
