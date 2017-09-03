@@ -1,7 +1,7 @@
 {
-    "name": "mattrink/laravel-form-model-maker",
-    "description": "A package to generate froms from model objects.",
-    "homepage": "https://github.com/mattrink/laravel-form-model-maker",
+    "name": "mattrink/laravel-model-form-maker",
+    "description": "A package to generate forms from model objects.",
+    "homepage": "https://github.com/mattrink/laravel-model-form-maker",
     "keywords":
     [
         "laravel",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MattRink\\LaravelFormModelMaker\\": "src"
+            "MattRink\\LaravelModelFormMaker\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -34,7 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MattRink\\LaravelFormModelMaker\\Test\\": "tests"
+            "MattRink\\LaravelModelFormMaker\\Test\\": "tests"
         }
     },
     "scripts": {
