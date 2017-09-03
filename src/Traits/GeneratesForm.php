@@ -72,7 +72,7 @@ trait GeneratesForm
     /**
      * 
      */
-    protected function getModelAttributes() {
+    public function getModelAttributes() {
         if (!count($this->getAttributes())) {
             $this->getAllColumnsNames();
         } else {
