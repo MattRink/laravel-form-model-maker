@@ -1,0 +1,51 @@
+{
+    "name": "mattrink/laravel-form-model-maker",
+    "description": "A package to generate froms from model objects.",
+    "homepage": "https://github.com/mattrink/laravel-form-model-maker",
+    "keywords":
+    [
+        "laravel",
+        "forms",
+        "model"
+    ],
+    "authors": [
+        {
+            "name": "Matt Rink",
+            "email": "matt.rink@gmail.com",
+            "homepage": "https://mattrink.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "laravelcollective/html": "~5.5.0",
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.2",
+    },
+    "autoload": {
+        "psr-4": {
+            "MattRink\\LaravelFormModelMaker\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MattRink\\LaravelFormModelMaker\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "license": "MIT",
+    "extra": {
+        // "laravel": {
+        //     "providers": [
+        //         "Spatie\\Activitylog\\ActivitylogServiceProvider"
+        //     ]
+        // }
+    }
+}
