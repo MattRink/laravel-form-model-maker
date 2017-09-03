@@ -22,6 +22,14 @@ class Form
      */
     protected $formFields = [];
 
+
+    /**
+     * The attributes to ignore when building the form.
+     * 
+     * @var array
+     */
+    protected $ignoredAttributes = [];
+
     /**
      * The model that we are generating a form for.
      * 
