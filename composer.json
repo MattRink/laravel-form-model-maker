@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MattRink\\LaravelModelFormMaker\\": "src"
+            "MattRink\\ModelFormMaker\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -34,7 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MattRink\\LaravelModelFormMaker\\Test\\": "tests"
+            "MattRink\\ModelFormMaker\\Test\\": "tests"
         }
     },
     "scripts": {

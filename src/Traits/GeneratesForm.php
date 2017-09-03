@@ -1,8 +1,8 @@
 <?php
 
-namespace MattRink\LaravelModelFormMaker\Traits;
+namespace MattRink\ModelFormMaker\Traits;
 
-use MattRink\LaravelModelFormMaker\ModelFormMaker;
+use MattRink\ModelFormMaker\FormFactory;
 
 trait GeneratesForm
 {
@@ -18,7 +18,7 @@ trait GeneratesForm
      */
     public function form()
     {
-        $form = new ModelFormMaker($this);
-        return $form->make();
+        $form = FormFactory::make($this);
+        return $form->show();
     }
 }
