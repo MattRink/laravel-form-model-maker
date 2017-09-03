@@ -4,7 +4,6 @@ namespace MattRink\ModelFormMaker;
 
 use Illuminate\Database\Eloquent\Model;
 
-
 class Form
 {
     /**
@@ -51,10 +50,14 @@ class Form
     {
         $fields = (count($this->formFields) ? array_intersect($this->modelAttributes, $this->formFields) : $this->modelAttributes);
 
-        $form = '';
+        $form = \Collective\Html\FormFacade::model($this->model);
         foreach ($fields as $field) {
-            $form .= Form::text($field, $this->model->{$field});
+            $form .= '<div class="form-group">';
+            $form .= \Collective\Html\FormFacade::label($field, title_case($field));
+            $form .= \Collective\Html\FormFacade::text($field, $this->model->{$field}, ['class' => 'form-control']);
+            $form .= '</div>';
         }
+        $form .= \Collective\Html\FormFacade::close();
 
         return $form;
     }
